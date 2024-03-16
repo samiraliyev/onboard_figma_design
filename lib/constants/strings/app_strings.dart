@@ -6,11 +6,11 @@ class AppStrings {
   static const String loginButton = "Login";
   static const String registerButton = "Register";
   static const String loginTopText = "Login here";
-  static const String loginMessage = "Welcome back you've been missed!";
+  static const String loginMessage = "Welcome back you've \nbeen missed!";
   static const String emailHint = "Email";
   static const String passwordHint = "Password";
   static const String confirmPassHint = "Confirm Password";
-  static const String forgotText = "Forgot your password";
+  static const String forgotText = "Forgot your password?";
   static const String signInText = "Sign in";
   static const String signUpText = "Sign up";
   static const String newAccountText = "Create new account";

@@ -5,4 +5,5 @@ class AppPath {
   static const String ellipse2 = "assets/images/ellipse2.png";
   static const String rectangle1 = "assets/images/rectangle1.png";
   static const String rectangle2 = "assets/images/rectangle2.png";
+  static const String googleVector = "assets/icons/google.png";
 }

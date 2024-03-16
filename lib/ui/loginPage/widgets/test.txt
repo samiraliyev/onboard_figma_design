@@ -1,0 +1,51 @@
+   const Positioned(
+                  top: 5.0,
+                  left: 20.0,
+                  child: Text(
+                    overflow: TextOverflow.clip,
+                    AppStrings.loginTopText,
+                    style: TextStyle(
+                      fontFamily: "Poppins",
+                      fontWeight: FontWeight.w700,
+                      fontSize: 30.0,
+                      color: AppColors.blueColor,
+                    ),
+                  ),
+                ),
+                const Positioned(
+                  top: 10.0,
+                  child: Text(
+                    AppStrings.loginMessage,
+                    style: TextStyle(
+                      fontSize: 20.0,
+                      fontWeight: FontWeight.w600,
+                      fontFamily: "Poppins",
+                    ),
+                  ),
+                ),
+                CustomInputs(
+                  controller: emailController,
+                  focus: emailFocus,
+                  hint: AppStrings.emailHint,
+                  onFieldSubmitted: (v) =>
+                      FocusScope.of(context).requestFocus(emailFocus),
+                  validator: (v) {
+                    if (v == null || v.isEmpty) {
+                      return 'Please enter a email address';
+                    }
+                    return null;
+                  },
+                ),
+                CustomInputs(
+                  controller: passController,
+                  focus: passwordFocus,
+                  hint: AppStrings.passwordHint,
+                  onFieldSubmitted: (v) =>
+                      FocusScope.of(context).requestFocus(passwordFocus),
+                  validator: (v) {
+                    if (v == null || v.isEmpty) {
+                      return 'Please enter a password';
+                    }
+                    return null;
+                  },
+                )

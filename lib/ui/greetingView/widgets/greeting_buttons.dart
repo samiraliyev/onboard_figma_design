@@ -1,4 +1,5 @@
 import 'package:figma_onboard_design/constants/colors/app_colors.dart';
+import 'package:figma_onboard_design/ui/registerPage/register_page_view.dart';
 import 'package:flutter/material.dart';
 
 import '../../../constants/strings/app_strings.dart';
@@ -40,7 +41,13 @@ class GreetingButtons extends StatelessWidget {
           ),
           Expanded(
             child: TextButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const RegisterPageView(),
+                    ));
+              },
               child: const Text(AppStrings.registerButton),
             ),
           ),
